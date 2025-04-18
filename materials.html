@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>素材库 - 广告投放平台AI助手</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/materials.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 顶部导航栏 -->
+        <header class="top-nav">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="Logo">
+                <span>广告投放平台AI助手</span>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索...">
+            </div>
+            <div class="nav-actions">
+                <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                <button class="icon-btn"><i class="fas fa-cog"></i></button>
+                <div class="user-avatar">
+                    <img src="images/avatar-placeholder.png" alt="用户头像">
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <!-- 左侧导航栏 -->
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> 仪表盘</a></li>
+                    <li><a href="chat.html"><i class="fas fa-comment-dots"></i> AI对话</a></li>
+                    <li><a href="accounts.html"><i class="fas fa-user-circle"></i> 账号管理</a></li>
+                    <li class="active"><a href="materials.html"><i class="fas fa-images"></i> 素材库</a></li>
+                    <li><a href="history.html"><i class="fas fa-history"></i> 历史记录</a></li>
+                    <li><a href="settings.html"><i class="fas fa-cog"></i> 设置</a></li>
+                </ul>
+            </nav>
+
+            <!-- 主内容区域 - 素材库 -->
+            <main class="content-area">
+                <!-- 顶部操作栏 -->
+                <div class="content-header">
+                    <h1>素材库</h1>
+                    <div class="header-actions">
+                        <div class="search-filter">
+                            <input type="text" placeholder="搜索素材...">
+                            <button class="filter-btn">
+                                <i class="fas fa-filter"></i> 筛选
+                            </button>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-upload"></i> 上传素材
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 筛选标签栏 -->
+                <div class="filter-tags">
+                    <span class="filter-tag active">全部</span>
+                    <span class="filter-tag">图片</span>
+                    <span class="filter-tag">视频</span>
+                    <span class="filter-tag">文案</span>
+                    <span class="filter-tag">使用中</span>
+                    <span class="filter-tag">未使用</span>
+                </div>
+
+                <!-- 素材网格 -->
+                <div class="materials-grid">
+                    <!-- 图片素材 -->
+                    <div class="material-card">
+                        <div class="material-preview image">
+                            <div class="material-thumbnail" style="background-color: #1890ff;"></div>
+                            <div class="material-actions">
+                                <button class="material-action-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="material-info">
+                            <h3>夏季促销横幅</h3>
+                            <p class="material-date">2025-04-15</p>
+                            <div class="material-tags">
+                                <span class="material-type-tag">图片</span>
+                                <span class="material-status-tag">使用中</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 视频素材 -->
+                    <div class="material-card">
+                        <div class="material-preview video">
+                            <div class="material-thumbnail" style="background-color: #52c41a;">
+                                <div class="video-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="material-action-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="material-info">
+                            <h3>产品演示视频</h3>
+                            <p class="material-date">2025-04-14</p>
+                            <div class="material-tags">
+                                <span class="material-type-tag">视频</span>
+                                <span class="material-status-tag">使用中</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 文案素材 -->
+                    <div class="material-card">
+                        <div class="material-preview text">
+                            <div class="material-thumbnail text-preview">
+                                <p>限时优惠！购买我们的产品，享受20%折扣。活动截止到月底，先到先得！</p>
+                            </div>
+                            <div class="material-actions">
+                                <button class="material-action-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="material-info">
+                            <h3>促销文案</h3>
+                            <p class="material-date">2025-04-13</p>
+                            <div class="material-tags">
+                                <span class="material-type-tag">文案</span>
+                                <span class="material-status-tag">未使用</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 图片素材 -->
+                    <div class="material-card">
+                        <div class="material-preview image">
+                            <div class="material-thumbnail" style="background-color: #faad14;"></div>
+                            <div class="material-actions">
+                                <button class="material-action-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="material-info">
+                            <h3>产品展示图</h3>
+                            <p class="material-date">2025-04-12</p>
+                            <div class="material-tags">
+                                <span class="material-type-tag">图片</span>
+                                <span class="material-status-tag">使用中</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 视频素材 -->
+                    <div class="material-card">
+                        <div class="material-preview video">
+                            <div class="material-thumbnail" style="background-color: #f5222d;">
+                                <div class="video-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="material-action-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="material-info">
+                            <h3>品牌故事</h3>
+                            <p class="material-date">2025-04-10</p>
+                            <div class="material-tags">
+                                <span class="material-type-tag">视频</span>
+                                <span class="material-status-tag">未使用</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 文案素材 -->
+                    <div class="material-card">
+                        <div class="material-preview text">
+                            <div class="material-thumbnail text-preview">
+                                <p>我们的使命是为客户提供最优质的产品和服务，让您的生活更加便捷和美好。</p>
+                            </div>
+                            <div class="material-actions">
+                                <button class="material-action-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="material-action-btn">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="material-info">
+                            <h3>品牌宣言</h3>
+                            <p class="material-date">2025-04-08</p>
+                            <div class="material-tags">
+                                <span class="material-type-tag">文案</span>
+                                <span class="material-status-tag">使用中</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 上传素材卡片 -->
+                    <div class="material-card upload-card">
+                        <div class="upload-icon">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                        <p>上传新素材</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- 素材预览模态框 (默认隐藏) -->
+    <div class="material-preview-modal" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>夏季促销横幅</h3>
+                <button class="close-modal-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="preview-container">
+                    <!-- 预览内容将在JavaScript中动态插入 -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="material-details">
+                    <p><strong>类型:</strong> 图片</p>
+                    <p><strong>尺寸:</strong> 1200 x 628 px</p>
+                    <p><strong>创建日期:</strong> 2025-04-15</p>
+                    <p><strong>状态:</strong> 使用中</p>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-default">
+                        <i class="fas fa-download"></i> 下载
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-share"></i> 分享
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/materials.js"></script>
+</body>
+</html>

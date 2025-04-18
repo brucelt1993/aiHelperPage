@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI对话 - 广告投放平台AI助手</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 顶部导航栏 -->
+        <header class="top-nav">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="Logo">
+                <span>广告投放平台AI助手</span>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索...">
+            </div>
+            <div class="nav-actions">
+                <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                <button class="icon-btn"><i class="fas fa-cog"></i></button>
+                <div class="user-avatar">
+                    <img src="images/avatar-placeholder.png" alt="用户头像">
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <!-- 左侧对话列表 -->
+            <aside class="chat-sidebar">
+                <div class="new-chat-btn-container">
+                    <button class="new-chat-btn">
+                        <i class="fas fa-plus"></i> 新建对话
+                    </button>
+                </div>
+                
+                <div class="chat-groups">
+                    <div class="chat-group">
+                        <h3>最近对话</h3>
+                        <div class="chat-list">
+                            <div class="chat-list-item active">
+                                <div class="chat-list-icon">
+                                    <i class="fas fa-comment-dots"></i>
+                                </div>
+                                <div class="chat-list-info">
+                                    <h4>Facebook广告优化</h4>
+                                    <p>2025-04-17</p>
+                                </div>
+                            </div>
+                            <div class="chat-list-item">
+                                <div class="chat-list-icon">
+                                    <i class="fas fa-comment-dots"></i>
+                                </div>
+                                <div class="chat-list-info">
+                                    <h4>创意素材分析</h4>
+                                    <p>2025-04-16</p>
+                                </div>
+                            </div>
+                            <div class="chat-list-item">
+                                <div class="chat-list-icon">
+                                    <i class="fas fa-comment-dots"></i>
+                                </div>
+                                <div class="chat-list-info">
+                                    <h4>广告预算调整</h4>
+                                    <p>2025-04-15</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-group">
+                        <h3>已归档对话</h3>
+                        <div class="chat-list">
+                            <div class="chat-list-item">
+                                <div class="chat-list-icon">
+                                    <i class="fas fa-archive"></i>
+                                </div>
+                                <div class="chat-list-info">
+                                    <h4>2025年Q1广告策略</h4>
+                                    <p>2025-03-28</p>
+                                </div>
+                            </div>
+                            <div class="chat-list-item">
+                                <div class="chat-list-icon">
+                                    <i class="fas fa-archive"></i>
+                                </div>
+                                <div class="chat-list-info">
+                                    <h4>节日营销活动</h4>
+                                    <p>2025-03-15</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 中央对话区域 -->
+            <main class="chat-main">
+                <!-- 顶部操作栏 -->
+                <div class="chat-header">
+                    <div class="chat-header-left">
+                        <button class="back-btn">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <h2>Facebook广告优化</h2>
+                    </div>
+                    <div class="chat-header-actions">
+                        <button class="icon-btn">
+                            <i class="fas fa-save"></i>
+                        </button>
+                        <button class="icon-btn">
+                            <i class="fas fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 上下文管理区 -->
+                <div class="context-manager">
+                    <div class="context-progress">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                    <span class="context-info">上下文使用: 65% (1300/2000 tokens)</span>
+                </div>
+                
+                <!-- 消息区域 -->
+                <div class="messages-container">
+                    <!-- AI消息 -->
+                    <div class="message ai-message">
+                        <div class="message-avatar">
+                            <img src="images/ai-avatar-placeholder.png" alt="AI头像">
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="message-sender">AI助手</span>
+                            </div>
+                            <div class="message-body">
+                                <p>您好！我是您的广告投放AI助手。我可以帮您分析广告数据、提供优化建议、生成创意素材等。请问您今天需要什么帮助？</p>
+                            </div>
+                            <div class="message-footer">
+                                <span class="message-time">14:30</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 用户消息 -->
+                    <div class="message user-message">
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="message-sender">您</span>
+                            </div>
+                            <div class="message-body">
+                                <p>我想分析一下我的Facebook广告账号最近一周的表现，重点关注转化率和ROI指标。</p>
+                            </div>
+                            <div class="message-footer">
+                                <span class="message-time">14:31</span>
+                            </div>
+                        </div>
+                        <div class="message-avatar">
+                            <img src="images/avatar-placeholder.png" alt="用户头像">
+                        </div>
+                    </div>
+                    
+                    <!-- AI消息带图表 -->
+                    <div class="message ai-message">
+                        <div class="message-avatar">
+                            <img src="images/ai-avatar-placeholder.png" alt="AI头像">
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="message-sender">AI助手</span>
+                            </div>
+                            <div class="message-body">
+                                <p>根据您Facebook广告账号最近一周的数据，我为您分析了转化率和ROI指标的表现：</p>
+                                <div class="chart-container">
+                                    <div class="chart-placeholder">
+                                        <p>转化率和ROI趋势图</p>
+                                        <p style="font-size: 12px; color: var(--text-secondary);">
+                                            (实际应用中这里将显示ECharts图表)
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>主要发现：</p>
+                                <ul>
+                                    <li>转化率从上周的2.8%提升到本周的3.2%，增长了14.3%</li>
+                                    <li>ROI从2.5提升到2.8，增长了12%</li>
+                                    <li>周末（周六和周日）的表现明显优于工作日</li>
+                                    <li>移动端转化率高于桌面端约18%</li>
+                                </ul>
+                                <p>建议：</p>
+                                <ul>
+                                    <li>增加周末的广告预算分配</li>
+                                    <li>优化移动端广告体验，进一步提高转化</li>
+                                    <li>测试新的创意素材，特别是视频内容</li>
+                                </ul>
+                                <p>您希望我针对哪个方面提供更详细的分析或建议？</p>
+                            </div>
+                            <div class="message-footer">
+                                <span class="message-time">14:32</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 输入区域 -->
+                <div class="input-container">
+                    <div class="input-actions">
+                        <button class="input-action-btn">
+                            <i class="fas fa-image"></i>
+                        </button>
+                        <button class="input-action-btn">
+                            <i class="fas fa-paperclip"></i>
+                        </button>
+                    </div>
+                    <div class="input-wrapper">
+                        <textarea placeholder="输入消息..." rows="1"></textarea>
+                    </div>
+                    <button class="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </main>
+
+            <!-- 右侧配置面板 -->
+            <aside class="config-sidebar">
+                <div class="config-section">
+                    <h3>MCP服务</h3>
+                    <select class="config-select">
+                        <option value="ad-analysis">广告分析服务</option>
+                        <option value="creative-gen">创意生成服务</option>
+                        <option value="budget-opt">预算优化服务</option>
+                    </select>
+                </div>
+                
+                <div class="config-section">
+                    <h3>AI模型</h3>
+                    <div class="model-options">
+                        <div class="model-option">
+                            <input type="radio" id="model1" name="model" checked>
+                            <label for="model1">基础对话型</label>
+                        </div>
+                        <div class="model-option">
+                            <input type="radio" id="model2" name="model">
+                            <label for="model2">创意生成型</label>
+                        </div>
+                        <div class="model-option">
+                            <input type="radio" id="model3" name="model">
+                            <label for="model3">数据分析型</label>
+                        </div>
+                    </div>
+                    <div class="model-description">
+                        <p>基础对话型：适合日常对话和一般性问题咨询，响应速度快。</p>
+                    </div>
+                </div>
+                
+                <div class="config-section">
+                    <h3>关联账号</h3>
+                    <select class="config-select">
+                        <option value="fb-main">Facebook主账号</option>
+                        <option value="google-ads">Google Ads</option>
+                        <option value="twitter-ads">Twitter Ads</option>
+                    </select>
+                </div>
+                
+                <div class="config-section">
+                    <h3>素材库</h3>
+                    <div class="materials-grid">
+                        <div class="material-item">
+                            <img src="images/material-placeholder-1.png" alt="素材1">
+                        </div>
+                        <div class="material-item">
+                            <img src="images/material-placeholder-2.png" alt="素材2">
+                        </div>
+                        <div class="material-item">
+                            <img src="images/material-placeholder-3.png" alt="素材3">
+                        </div>
+                        <div class="material-item">
+                            <img src="images/material-placeholder-4.png" alt="素材4">
+                        </div>
+                    </div>
+                    <button class="view-all-btn">查看全部</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

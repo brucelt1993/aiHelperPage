@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广告投放平台AI助手</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 顶部导航栏 -->
+        <header class="top-nav">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="Logo">
+                <span>广告投放平台AI助手</span>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索...">
+            </div>
+            <div class="nav-actions">
+                <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                <button class="icon-btn"><i class="fas fa-cog"></i></button>
+                <div class="user-avatar">
+                    <img src="images/avatar-placeholder.png" alt="用户头像">
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <!-- 左侧导航栏 -->
+            <nav class="side-nav">
+                <ul>
+                    <li class="active"><a href="index.html"><i class="fas fa-home"></i> 仪表盘</a></li>
+                    <li><a href="chat.html"><i class="fas fa-comment-dots"></i> AI对话</a></li>
+                    <li><a href="accounts.html"><i class="fas fa-user-circle"></i> 账号管理</a></li>
+                    <li><a href="materials.html"><i class="fas fa-images"></i> 素材库</a></li>
+                    <li><a href="history.html"><i class="fas fa-history"></i> 历史记录</a></li>
+                    <li><a href="settings.html"><i class="fas fa-cog"></i> 设置</a></li>
+                </ul>
+            </nav>
+
+            <!-- 主内容区域 - 仪表盘 -->
+            <main class="content-area">
+                <!-- 欢迎区域 -->
+                <section class="welcome-area">
+                    <div class="welcome-text">
+                        <h1>欢迎回来，张三</h1>
+                        <p>今天是2025年4月18日 星期五 | 晴 26°C</p>
+                    </div>
+                </section>
+
+                <!-- 卡片区域 -->
+                <section class="cards-container">
+                    <!-- 最近对话卡片 -->
+                    <div class="card recent-chats">
+                        <h2>最近对话</h2>
+                        <div class="chat-item">
+                            <div class="chat-info">
+                                <h3>Facebook广告优化</h3>
+                                <p>2025-04-17</p>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-info">
+                                <h3>创意素材分析</h3>
+                                <p>2025-04-16</p>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-info">
+                                <h3>广告预算调整</h3>
+                                <p>2025-04-15</p>
+                            </div>
+                        </div>
+                        <a href="chat.html" class="view-all">查看全部</a>
+                    </div>
+
+                    <!-- 广告指标概览卡片 -->
+                    <div class="card metrics-overview">
+                        <h2>广告指标概览</h2>
+                        <div class="chart-container">
+                            <div class="chart-placeholder">图表区域</div>
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <span class="metric-label">CTR</span>
+                                <span class="metric-value">2.5% <span class="up">↑0.3%</span></span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">CPC</span>
+                                <span class="metric-value">$0.45 <span class="down">↓0.05</span></span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">转化率</span>
+                                <span class="metric-value">3.2% <span class="up">↑0.5%</span></span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">ROI</span>
+                                <span class="metric-value">2.8x <span class="up">↑0.2x</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 待处理任务卡片 -->
+                    <div class="card pending-tasks">
+                        <h2>待处理任务</h2>
+                        <div class="task-item">
+                            <input type="checkbox" id="task1">
+                            <label for="task1">审核新创意素材 (5)</label>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task2">
+                            <label for="task2">优化低效广告组</label>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task3">
+                            <label for="task3">更新广告系列预算</label>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task4">
+                            <label for="task4">分析竞品广告策略</label>
+                        </div>
+                    </div>
+
+                    <!-- 快速操作卡片 -->
+                    <div class="card quick-actions">
+                        <h2>快速操作</h2>
+                        <div class="action-buttons">
+                            <button class="action-btn"><i class="fas fa-comment-dots"></i> 新建对话</button>
+                            <button class="action-btn"><i class="fas fa-upload"></i> 上传素材</button>
+                        </div>
+                        <div class="recent-section">
+                            <h3>常用账号:</h3>
+                            <div class="tags-container">
+                                <span class="tag">Facebook主账号</span>
+                                <span class="tag">Google Ads</span>
+                            </div>
+                        </div>
+                        <div class="recent-section">
+                            <h3>最近素材:</h3>
+                            <div class="recent-materials">
+                                <div class="material-thumbnail"></div>
+                                <div class="material-thumbnail"></div>
+                                <div class="material-thumbnail"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
