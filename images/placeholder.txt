@@ -1,0 +1,10 @@
+这个目录用于存放图片资源。
+
+在实际应用中，您需要添加以下图片：
+
+1. logo-placeholder.png - 平台logo
+2. avatar-placeholder.png - 用户头像
+3. ai-avatar-placeholder.png - AI助手头像
+4. material-placeholder-1.png 到 material-placeholder-4.png - 素材缩略图
+
+目前在代码中，我们使用了CSS背景色作为这些图片的占位符。
