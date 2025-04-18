@@ -21,8 +21,8 @@
                 <input type="text" placeholder="搜索...">
             </div>
             <div class="nav-actions">
-                <button class="icon-btn"><i class="fas fa-bell"></i></button>
-                <button class="icon-btn"><i class="fas fa-cog"></i></button>
+                <button class="icon-btn" id="notification-btn"><i class="fas fa-bell"></i></button>
+                <button class="icon-btn" id="settings-btn"><i class="fas fa-cog"></i></button>
                 <div class="user-avatar">
                     <img src="images/avatar-placeholder.png" alt="用户头像">
                 </div>
@@ -50,6 +50,61 @@
                         <h1>欢迎回来，张三</h1>
                         <p>今天是2025年4月18日 星期五 | 晴 26°C</p>
                     </div>
+                    <div class="welcome-actions">
+                        <button class="btn btn-primary"><i class="fas fa-plus"></i> 新建对话</button>
+                    </div>
+                </section>
+
+                <!-- 数据概览 -->
+                <section class="data-overview">
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="overview-data">
+                            <h3>总展示量</h3>
+                            <div class="overview-value">12,500</div>
+                            <div class="overview-change up">
+                                <i class="fas fa-arrow-up"></i> 4.2%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <div class="overview-data">
+                            <h3>总点击量</h3>
+                            <div class="overview-value">312</div>
+                            <div class="overview-change up">
+                                <i class="fas fa-arrow-up"></i> 11.4%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="overview-data">
+                            <h3>平均CTR</h3>
+                            <div class="overview-value">2.5%</div>
+                            <div class="overview-change down">
+                                <i class="fas fa-arrow-down"></i> 0.1%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="overview-data">
+                            <h3>总花费</h3>
+                            <div class="overview-value">$140.25</div>
+                            <div class="overview-change up">
+                                <i class="fas fa-arrow-up"></i> 5.8%
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- 卡片区域 -->
@@ -62,6 +117,7 @@
                                 <h3>Facebook广告优化</h3>
                                 <p>2025-04-17</p>
                             </div>
+                            <div class="chat-badge new">新</div>
                         </div>
                         <div class="chat-item">
                             <div class="chat-info">
@@ -110,19 +166,26 @@
                         <div class="task-item">
                             <input type="checkbox" id="task1">
                             <label for="task1">审核新创意素材 (5)</label>
+                            <span class="task-priority high">高</span>
                         </div>
                         <div class="task-item">
                             <input type="checkbox" id="task2">
                             <label for="task2">优化低效广告组</label>
+                            <span class="task-priority medium">中</span>
                         </div>
                         <div class="task-item">
                             <input type="checkbox" id="task3">
                             <label for="task3">更新广告系列预算</label>
+                            <span class="task-priority medium">中</span>
                         </div>
                         <div class="task-item">
                             <input type="checkbox" id="task4">
                             <label for="task4">分析竞品广告策略</label>
+                            <span class="task-priority low">低</span>
                         </div>
+                        <button class="add-task-btn">
+                            <i class="fas fa-plus"></i> 添加任务
+                        </button>
                     </div>
 
                     <!-- 快速操作卡片 -->
@@ -149,7 +212,117 @@
                         </div>
                     </div>
                 </section>
+                
+                <!-- 广告活动概览 -->
+                <section class="campaigns-overview">
+                    <h2><i class="fas fa-bullhorn"></i> 广告活动概览</h2>
+                    <div class="campaigns-table-container">
+                        <table class="campaigns-table">
+                            <thead>
+                                <tr>
+                                    <th>活动名称</th>
+                                    <th>平台</th>
+                                    <th>状态</th>
+                                    <th>展示量</th>
+                                    <th>点击量</th>
+                                    <th>CTR</th>
+                                    <th>花费</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>夏季促销活动</td>
+                                    <td><i class="fab fa-facebook-f"></i> Facebook</td>
+                                    <td><span class="status-badge active">活跃</span></td>
+                                    <td>5,280</td>
+                                    <td>145</td>
+                                    <td>2.75%</td>
+                                    <td>$65.25</td>
+                                    <td>
+                                        <button class="table-action-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="table-action-btn"><i class="fas fa-chart-bar"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>新品上市推广</td>
+                                    <td><i class="fab fa-google"></i> Google</td>
+                                    <td><span class="status-badge active">活跃</span></td>
+                                    <td>4,120</td>
+                                    <td>98</td>
+                                    <td>2.38%</td>
+                                    <td>$42.80</td>
+                                    <td>
+                                        <button class="table-action-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="table-action-btn"><i class="fas fa-chart-bar"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>品牌知名度提升</td>
+                                    <td><i class="fab fa-twitter"></i> Twitter</td>
+                                    <td><span class="status-badge paused">已暂停</span></td>
+                                    <td>2,450</td>
+                                    <td>52</td>
+                                    <td>2.12%</td>
+                                    <td>$28.60</td>
+                                    <td>
+                                        <button class="table-action-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="table-action-btn"><i class="fas fa-chart-bar"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>视频广告测试</td>
+                                    <td><i class="fab fa-tiktok"></i> TikTok</td>
+                                    <td><span class="status-badge active">活跃</span></td>
+                                    <td>650</td>
+                                    <td>17</td>
+                                    <td>2.62%</td>
+                                    <td>$3.60</td>
+                                    <td>
+                                        <button class="table-action-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="table-action-btn"><i class="fas fa-chart-bar"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
             </main>
+        </div>
+    </div>
+
+    <!-- 通知面板 -->
+    <div class="notification-panel" style="display: none;">
+        <div class="notification-header">
+            <h3>通知</h3>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="notification-content">
+            <div class="notification-item unread">
+                <div class="notification-icon"><i class="fas fa-exclamation-circle"></i></div>
+                <div class="notification-text">
+                    <p>Facebook广告账号余额不足，请及时充值</p>
+                    <span class="notification-time">10分钟前</span>
+                </div>
+            </div>
+            <div class="notification-item unread">
+                <div class="notification-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="notification-text">
+                    <p>夏季促销活动CTR上升了15%</p>
+                    <span class="notification-time">1小时前</span>
+                </div>
+            </div>
+            <div class="notification-item">
+                <div class="notification-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="notification-text">
+                    <p>新创意素材已审核通过</p>
+                    <span class="notification-time">昨天</span>
+                </div>
+            </div>
+        </div>
+        <div class="notification-footer">
+            <button class="btn btn-default">全部标为已读</button>
+            <a href="#">查看全部</a>
         </div>
     </div>
 
